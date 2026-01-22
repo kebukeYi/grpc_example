@@ -11,3 +11,11 @@ Server:
 
 Client:
     client : DeviceService::NewStub(CreateChannel(server_address));
+
+### cmake
+只加载项目下第一个CMakeList.txt即可;
+grpc_example/CMakeList.txt(load,edit)
+
+grpc_example/src/CMakeList.txt(no load,only edit)
+grpc_example/src/client/CMakeList.txt(no load,only edit)
+grpc_example/src/server/CMakeList.txt(no load,only edit)
