@@ -1,6 +1,6 @@
 set(TARGET device_rpc_client)
 
-file(GLOB_RECURSE RPC_CLIENT_SOURCES "${CMAKE_SOURCE_DIR}/client/*.cpp" "${CMAKE_SOURCE_DIR}/proto/*.cc")
+file(GLOB_RECURSE RPC_CLIENT_SOURCES "${CMAKE_SOURCE_DIR}/src/client/*.cpp" "${CMAKE_SOURCE_DIR}/src/proto/*.cc")
 
 find_package(Protobuf CONFIG REQUIRED)
 find_package(gRPC CONFIG REQUIRED)
